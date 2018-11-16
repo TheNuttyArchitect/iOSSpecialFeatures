@@ -1,7 +1,5 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using iOSSpecialFeatures.MobileAppService.Data.Models;
+﻿using iOSSpecialFeatures.Shared;
+using iOSSpecialFeatures.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace iOSSpecialFeatures.MobileAppService.Data

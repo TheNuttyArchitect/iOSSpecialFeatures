@@ -24,4 +24,7 @@
     <Folder Include="Data\Repositories\" />
     <Folder Include="Graphs\FieldBuilders\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iOSSpecialFeatures.Shared\iOSSpecialFeatures.Shared.csproj" />
+  </ItemGroup>
 </Project>

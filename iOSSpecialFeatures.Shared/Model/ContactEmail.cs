@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace iOSSpecialFeatures.MobileAppService.Data.Models
+namespace iOSSpecialFeatures.Shared.Models
 {
     [Table("contact_email")]
     public class ContactEmail : AuditBase

@@ -1,10 +1,10 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using iOSSpecialFeatures.MobileAppService.Data.Models;
+using iOSSpecialFeatures.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace iOSSpecialFeatures.MobileAppService.Data
+namespace iOSSpecialFeatures.Shared
 {
     public interface IDataContext
     {

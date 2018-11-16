@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace iOSSpecialFeatures.MobileAppService.Data.Models
+namespace iOSSpecialFeatures.Shared.Models
 {
     public abstract class AuditBase
     {

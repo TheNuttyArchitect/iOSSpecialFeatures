@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using iOSSpecialFeatures.MobileAppService.Data.Models;
+using iOSSpecialFeatures.Shared.Models;
 
-namespace iOSSpecialFeatures.MobileAppService.Data.Repositories
+namespace iOSSpecialFeatures.Shared.Repositories
 {
     public interface IContactRepository
     {
