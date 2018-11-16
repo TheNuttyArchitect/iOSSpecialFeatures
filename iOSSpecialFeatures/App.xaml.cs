@@ -3,6 +3,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using iOSSpecialFeatures.Services;
 using iOSSpecialFeatures.Views;
+using iOSSpecialFeatures.Shared.Repositories;
+using iOSSpecialFeatures.Repositories;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace iOSSpecialFeatures
@@ -10,12 +12,14 @@ namespace iOSSpecialFeatures
     public partial class App : Application
     {
         //TODO: Replace with *.azurewebsites.net url after deploying backend to Azure
-        public static string AzureBackendUrl = "http://localhost:5000";
+        public static string BackendUrl = "http://localhost:5000";
         public static bool UseMockDataStore = true;
 
         public App()
         {
             InitializeComponent();
+
+            DependencyService.Register<IContactRepository, ContactRepository>();
 
             if (UseMockDataStore)
                 DependencyService.Register<MockDataStore>();
