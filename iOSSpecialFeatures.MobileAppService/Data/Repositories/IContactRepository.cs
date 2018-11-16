@@ -12,5 +12,6 @@ namespace iOSSpecialFeatures.MobileAppService.Data.Repositories
         Task<List<Contact>> GetAllContacts();
         Task<Contact> GetContact(Guid contactID);
         Task<Contact> UpdateContact(Contact contact);
+        Task<ChangeDataHash> HasDataChanged();
     }
 }

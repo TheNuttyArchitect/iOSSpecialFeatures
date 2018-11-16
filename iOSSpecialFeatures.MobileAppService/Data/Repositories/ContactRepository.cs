@@ -37,14 +37,17 @@ namespace iOSSpecialFeatures.MobileAppService.Data.Repositories
 
         public async Task<Contact> UpdateContact(Contact contact)
         {
-            var dbContact = await RootContactQueryNonTracked.SingleAsync(c => c.ContactID == contact.ContactID);
+            var dbContact = await dataContext.Contacts.AsNoTracking().SingleAsync(c => c.ContactID == contact.ContactID);
+            var dbPhones = await dataContext.ContactPhoneNumbers.AsNoTracking().Where(p => p.ContactID == contact.ContactID).ToListAsync();
+            var dbEmails = await dataContext.ContactEmailAddresses.AsNoTracking().Where(e => e.ContactID == contact.ContactID).ToListAsync();
+
             contact.LastModifiedDate = DateTime.Now;
 
             if(contact.EmailAddresses != null)
             {
                 foreach(var emailAddress in contact.EmailAddresses)
                 {
-                    var dbEmailAddress = dbContact.EmailAddresses.SingleOrDefault(e => e.ContactEmailID == emailAddress.ContactEmailID);
+                    var dbEmailAddress = dbEmails.SingleOrDefault(e => e.ContactEmailID == emailAddress.ContactEmailID);
                     if(dbEmailAddress != null && dbEmailAddress != emailAddress)
                     {
                         emailAddress.LastModifiedDate = DateTime.Now;
@@ -58,7 +61,7 @@ namespace iOSSpecialFeatures.MobileAppService.Data.Repositories
             {
                 foreach(var phoneNumber in contact.PhoneNumbers)
                 {
-                    var dbPhoneNumber = dbContact.PhoneNumbers.SingleOrDefault(p => p.ContactPhoneID == phoneNumber.ContactPhoneID);
+                    var dbPhoneNumber = dbPhones.SingleOrDefault(p => p.ContactPhoneID == phoneNumber.ContactPhoneID);
                     if(dbPhoneNumber != null && dbPhoneNumber != phoneNumber)
                     {
                         phoneNumber.LastModifiedDate = DateTime.Now;
@@ -82,14 +85,52 @@ namespace iOSSpecialFeatures.MobileAppService.Data.Repositories
             return contact;
         }
 
+        public async Task<ChangeDataHash> HasDataChanged()
+        {
+            var currentHash = new ChangeDataHash
+            {
+                ContactsHash = Utils.GetHashObject(await dataContext.Contacts.ToArrayAsync()),
+                ContactPhoneNumbersHash = Utils.GetHashObject(await dataContext.ContactPhoneNumbers.ToArrayAsync()),
+                ContactEmailAddressesHash = Utils.GetHashObject(await dataContext.ContactEmailAddresses.ToArrayAsync()),
+            };
+
+            var dataHash = await dataContext.DataChanges.SingleOrDefaultAsync(d => d.ChangeDataHashID == 1);
+            if(dataHash != null)
+            {
+                if(dataHash.ContactsHash != currentHash.ContactsHash)
+                {
+                    dataHash.ContactsHash = currentHash.ContactsHash;
+                    currentHash.ContactsChanged = true;
+                }
+
+                if(dataHash.ContactPhoneNumbersHash != currentHash.ContactPhoneNumbersHash)
+                {
+                    dataHash.ContactPhoneNumbersHash = currentHash.ContactPhoneNumbersHash;
+                    currentHash.ContactPhoneNumbersChanged = true;
+                }
+
+                if(dataHash.ContactEmailAddressesHash != currentHash.ContactEmailAddressesHash)
+                {
+                    dataHash.ContactEmailAddressesHash = currentHash.ContactEmailAddressesHash;
+                    currentHash.ContactEmailAddressesChanged = true;
+                }
+            }
+            else
+            {
+                currentHash.ChangeDataHashID = 1;
+                currentHash.ContactsChanged = true;
+                currentHash.ContactEmailAddressesChanged = true;
+                currentHash.ContactPhoneNumbersChanged = true;
+                await dataContext.DataChanges.AddAsync(currentHash);
+            }
+
+            await dataContext.SaveChangesAsync();
+            return currentHash;
+        }
+
         private IQueryable<Contact> RootContactQuery => 
             dataContext.Contacts
                 .Include(c => c.PhoneNumbers)
                 .Include(c => c.EmailAddresses);
-
-        private IQueryable<Contact> RootContactQueryNonTracked =>
-            dataContext.Contacts.AsNoTracking()
-                .Include(c => c.PhoneNumbers).AsNoTracking()
-                .Include(c => c.EmailAddresses).AsNoTracking();
     }
 }

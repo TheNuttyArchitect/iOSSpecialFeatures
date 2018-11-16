@@ -11,6 +11,7 @@ namespace iOSSpecialFeatures.MobileAppService.Data
         DbSet<Contact> Contacts { get; set; }
         DbSet<ContactPhone> ContactPhoneNumbers { get; set; }
         DbSet<ContactEmail> ContactEmailAddresses { get; set; }
+        DbSet<ChangeDataHash> DataChanges { get; set; }
         EntityEntry Entry(object entity);
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);

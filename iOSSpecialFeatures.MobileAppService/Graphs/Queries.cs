@@ -23,6 +23,12 @@ namespace iOSSpecialFeatures.MobileAppService.Graphs
                 arguments: new QueryArguments(new QueryArgument<NullableGuidGraph>{ Name = "contactID"}),
                 resolve: ctx => contactRepository.GetContact(ctx.GetArgument<Guid>("contactID"))
             );
+
+            Field<ChangeDataGraph>
+            (
+                "changes",
+                resolve: ctx  => contactRepository.HasDataChanged()
+            );
         }
     }
 }

@@ -42,9 +42,8 @@ namespace iOSSpecialFeatures.MobileAppService
             services.AddDbContext<DataContext>();
             services.AddMvc();
             services.AddSingleton<IItemRepository, ItemRepository>();
-            services.AddTransient<IDataContext, DataContext>();
+            services.AddScoped<IDataContext, DataContext>();
             services.AddTransient<IContactRepository, ContactRepository>();
-
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
 
             services.AddSingleton<GraphQLQuery>();
@@ -56,6 +55,7 @@ namespace iOSSpecialFeatures.MobileAppService
             services.AddSingleton<ContactEmailInput>();
             services.AddSingleton<ContactPhoneInput>();
             services.AddSingleton<ContactInput>();
+            services.AddSingleton<ChangeDataGraph>();
             services.AddSingleton<Queries>();
             services.AddSingleton<Mutations>();
             var serviceProvider = services.BuildServiceProvider();

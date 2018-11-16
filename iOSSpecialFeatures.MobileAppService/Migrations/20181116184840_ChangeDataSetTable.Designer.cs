@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using iOSSpecialFeatures.MobileAppService.Data;
 
 namespace iOSSpecialFeatures.MobileAppService.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20181116184840_ChangeDataSetTable")]
+    partial class ChangeDataSetTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,7 +94,7 @@ namespace iOSSpecialFeatures.MobileAppService.Migrations
                         .HasMaxLength(255);
 
                     b.Property<string>("EmailType")
-                        .HasColumnName("email_type")
+                        .HasColumnName("phone_type")
                         .HasMaxLength(20);
 
                     b.Property<DateTime?>("LastModifiedDate")

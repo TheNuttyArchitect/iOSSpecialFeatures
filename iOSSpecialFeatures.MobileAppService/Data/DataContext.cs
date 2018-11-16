@@ -14,6 +14,8 @@ namespace iOSSpecialFeatures.MobileAppService.Data
 
         public DbSet<ContactEmail> ContactEmailAddresses { get; set; }
 
+        public DbSet<ChangeDataHash> DataChanges { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=data.db");
