@@ -1,7 +1,7 @@
 ﻿using System;
 using GraphQL.Types;
-using iOSSpecialFeatures.MobileAppService.Data.Repositories;
 using iOSSpecialFeatures.MobileAppService.Graphs.QueryTypes;
+using iOSSpecialFeatures.Shared.Repositories;
 
 namespace iOSSpecialFeatures.MobileAppService.Graphs
 {

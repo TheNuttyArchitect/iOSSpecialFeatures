@@ -1,9 +1,8 @@
-﻿using System;
-using GraphQL.Types;
-using iOSSpecialFeatures.MobileAppService.Data.Models;
-using iOSSpecialFeatures.MobileAppService.Data.Repositories;
+﻿using GraphQL.Types;
 using iOSSpecialFeatures.MobileAppService.Graphs.MutationTypes;
 using iOSSpecialFeatures.MobileAppService.Graphs.QueryTypes;
+using iOSSpecialFeatures.Shared.Models;
+using iOSSpecialFeatures.Shared.Repositories;
 
 namespace iOSSpecialFeatures.MobileAppService.Graphs
 {

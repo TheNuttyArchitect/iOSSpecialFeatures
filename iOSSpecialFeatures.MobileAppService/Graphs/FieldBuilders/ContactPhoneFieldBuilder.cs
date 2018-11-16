@@ -1,5 +1,5 @@
 ﻿using GraphQL.Types;
-using iOSSpecialFeatures.MobileAppService.Data.Models;
+using iOSSpecialFeatures.Shared.Models;
 
 namespace iOSSpecialFeatures.MobileAppService.Graphs.FieldBuilders
 {

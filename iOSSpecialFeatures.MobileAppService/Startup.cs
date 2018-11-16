@@ -17,6 +17,8 @@ using GraphQL;
 using GraphQL.Types;
 using iOSSpecialFeatures.MobileAppService.Graphs;
 using iOSSpecialFeatures.MobileAppService.Graphs.MutationTypes;
+using iOSSpecialFeatures.Shared;
+using iOSSpecialFeatures.Shared.Repositories;
 
 namespace iOSSpecialFeatures.MobileAppService
 {

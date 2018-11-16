@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using iOSSpecialFeatures.MobileAppService.Data.Models;
+using iOSSpecialFeatures.Shared;
+using iOSSpecialFeatures.Shared.Models;
+using iOSSpecialFeatures.Shared.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace iOSSpecialFeatures.MobileAppService.Data.Repositories
