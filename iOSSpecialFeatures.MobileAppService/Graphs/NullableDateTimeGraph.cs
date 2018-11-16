@@ -2,7 +2,7 @@
 using GraphQL.Language.AST;
 using GraphQL.Types;
 
-namespace iOSSpecialFeatures.MobileAppService.Graphs.QueryTypes
+namespace iOSSpecialFeatures.MobileAppService.Graphs
 {
     public class NullableDateTimeGraph : ScalarGraphType
     {

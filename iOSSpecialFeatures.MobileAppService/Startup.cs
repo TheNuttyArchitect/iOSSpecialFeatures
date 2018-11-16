@@ -16,6 +16,7 @@ using iOSSpecialFeatures.MobileAppService.Graphs.QueryTypes;
 using GraphQL;
 using GraphQL.Types;
 using iOSSpecialFeatures.MobileAppService.Graphs;
+using iOSSpecialFeatures.MobileAppService.Graphs.MutationTypes;
 
 namespace iOSSpecialFeatures.MobileAppService
 {

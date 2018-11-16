@@ -2,11 +2,11 @@
 using iOSSpecialFeatures.MobileAppService.Data.Models;
 using iOSSpecialFeatures.MobileAppService.Graphs.FieldBuilders;
 
-namespace iOSSpecialFeatures.MobileAppService.Graphs.QueryTypes
+namespace iOSSpecialFeatures.MobileAppService.Graphs.MutationTypes
 {
-    public class ContactEmailGraph : ObjectGraphType<ContactEmail>
+    public class ContactEmailInput : InputObjectGraphType<ContactEmail>
     {
-        public ContactEmailGraph()
+        public ContactEmailInput()
         {
             ContactEmailFieldBuilder.Build(this);
         }

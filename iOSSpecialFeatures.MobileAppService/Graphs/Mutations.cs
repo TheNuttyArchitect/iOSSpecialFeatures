@@ -2,6 +2,7 @@
 using GraphQL.Types;
 using iOSSpecialFeatures.MobileAppService.Data.Models;
 using iOSSpecialFeatures.MobileAppService.Data.Repositories;
+using iOSSpecialFeatures.MobileAppService.Graphs.MutationTypes;
 using iOSSpecialFeatures.MobileAppService.Graphs.QueryTypes;
 
 namespace iOSSpecialFeatures.MobileAppService.Graphs

@@ -10,6 +10,7 @@ namespace iOSSpecialFeatures.MobileAppService.Data.Repositories
         Task<Contact> AddContact(Contact contact);
         Task<Contact> DeleteContact(Guid contactID);
         Task<List<Contact>> GetAllContacts();
+        Task<Contact> GetContact(Guid contactID);
         Task<Contact> UpdateContact(Contact contact);
     }
 }

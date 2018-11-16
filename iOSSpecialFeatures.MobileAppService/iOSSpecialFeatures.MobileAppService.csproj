@@ -22,5 +22,6 @@
     <Folder Include="Graphs\QueryTypes\" />
     <Folder Include="Graphs\MutationTypes\" />
     <Folder Include="Data\Repositories\" />
+    <Folder Include="Graphs\FieldBuilders\" />
   </ItemGroup>
 </Project>

@@ -2,11 +2,11 @@
 using iOSSpecialFeatures.MobileAppService.Data.Models;
 using iOSSpecialFeatures.MobileAppService.Graphs.FieldBuilders;
 
-namespace iOSSpecialFeatures.MobileAppService.Graphs.QueryTypes
+namespace iOSSpecialFeatures.MobileAppService.Graphs.MutationTypes
 {
-    public class ContactPhoneGraph : ObjectGraphType<ContactPhone>
+    public class ContactPhoneInput : InputObjectGraphType<ContactPhone>
     {
-        public ContactPhoneGraph()
+        public ContactPhoneInput()
         {
             ContactPhoneFieldBuilder.Build(this);
         }
