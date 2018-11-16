@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="159d302f-a7a7-48d5-bb7f-5eaeb2a412ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/Controllers/ItemController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/Models/IItemRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/Models/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/Models/ItemRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/Startup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.MobileAppService/iOSSpecialFeatures.MobileAppService.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.UITests/AppInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.UITests/Pages/BasePage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.UITests/Pages/ItemsPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.UITests/Pages/NewItemPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.UITests/Tests/BaseTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.UITests/Tests/MockDataTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.UITests/iOSSpecialFeatures.UITests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/AppDelegate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon1024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon167.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon76.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Assets.xcassets/AppIcon.appiconset/Icon87.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Entitlements.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Main.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/Default-568h@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/Default-Portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/Default-Portrait@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/Default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/Default@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/tab_about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/tab_about@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/tab_about@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/tab_feed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/tab_feed@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/tab_feed@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/xamarin_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/xamarin_logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/Resources/xamarin_logo@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.iOS/iOSSpecialFeatures.iOS.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/App.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/App.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Models/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Services/AzureDataStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Services/IDataStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Services/MockDataStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/AboutViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/BaseViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/ItemDetailViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/ItemsViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/AboutPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/AboutPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/ItemDetailPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/ItemDetailPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/ItemsPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/ItemsPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/MainPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/MainPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/NewItemPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/Views/NewItemPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSSpecialFeatures/iOSSpecialFeatures.csproj" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1107757044">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="6" />
+          <entry key="xaml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="6" />
+          <entry key="XAML" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/Views/AboutPage.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1542308617980" expanded="true" signature="39:3568" ph="&lt;&lt;ContentPage.BindingContext&gt;&#10;        &lt;vm:AboutViewModel /&gt;&#10;    &lt;/ContentPage.BindingContext&gt; &lt;ContentPage.Resources&gt;&#10;        &lt;ResourceDictionary&gt;&#10;            &lt;!--Page Level Resources: Compatibile with Xamarin Live Player --&gt;&#10;            &lt;Color x:Key=&quot;Primary&quot;&gt;##2196F3&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;Accent&quot;&gt;##96d1ff&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;LightTextColor&quot;&gt;##999999&lt;/Color&gt;&#10;        &lt;/ResourceDictionary&gt;&#10;    &lt;/ContentPage.Resources&gt; &lt;Grid&gt;&#10;        &lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;        &lt;/Grid.RowDefinitions&gt;&#10;        &lt;StackLayout BackgroundColor=&quot;{StaticResource Accent}&quot; VerticalOptions=&quot;FillAndExpand&quot; HorizontalOptions=&quot;Fill&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Horizontal&quot; HorizontalOptions=&quot;Center&quot; VerticalOptions=&quot;Center&quot;&gt;&#10;                &lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/StackLayout&gt;&#10;        &lt;ScrollView Grid.Row=&quot;1&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; Padding=&quot;16,40,16,40&quot; Spacing=&quot;10&quot;&gt;&#10;                &lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/ScrollView&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="282:374" ph="&lt;&lt;vm:AboutViewModel /&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="379:728" ph="&lt;&lt;ResourceDictionary&gt;&#10;            &lt;!--Page Level Resources: Compatibile with Xamarin Live Player --&gt;&#10;            &lt;Color x:Key=&quot;Primary&quot;&gt;##2196F3&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;Accent&quot;&gt;##96d1ff&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;LightTextColor&quot;&gt;##999999&lt;/Color&gt;&#10;        &lt;/ResourceDictionary&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="411:699" ph="&lt;&lt;Color x:Key=&quot;Primary&quot;&gt;##2196F3&lt;/Color&gt; &lt;Color x:Key=&quot;Accent&quot;&gt;##96d1ff&lt;/Color&gt; &lt;Color x:Key=&quot;LightTextColor&quot;&gt;##999999&lt;/Color&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="733:3553" ph="&lt;&lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;        &lt;/Grid.RowDefinitions&gt; &lt;StackLayout BackgroundColor=&quot;{StaticResource Accent}&quot; VerticalOptions=&quot;FillAndExpand&quot; HorizontalOptions=&quot;Fill&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Horizontal&quot; HorizontalOptions=&quot;Center&quot; VerticalOptions=&quot;Center&quot;&gt;&#10;                &lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/StackLayout&gt; &lt;ScrollView Grid.Row=&quot;1&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; Padding=&quot;16,40,16,40&quot; Spacing=&quot;10&quot;&gt;&#10;                &lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/ScrollView&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="748:885" ph="&lt;&lt;RowDefinition Height=&quot;Auto&quot; /&gt; &lt;RowDefinition Height=&quot;*&quot; /&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="894:1372" ph="&lt;&lt;StackLayout Orientation=&quot;Horizontal&quot; HorizontalOptions=&quot;Center&quot; VerticalOptions=&quot;Center&quot;&gt;&#10;                &lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;&#10;            &lt;/StackLayout&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1019:1349" ph="&lt;&lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1126:1322" ph="&lt;&lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1381:3541" ph="&lt;&lt;StackLayout Orientation=&quot;Vertical&quot; Padding=&quot;16,40,16,40&quot; Spacing=&quot;10&quot;&gt;&#10;                &lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;&#10;            &lt;/StackLayout&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1419:3519" ph="&lt;&lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt; &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt; &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt; &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1507:2072" ph="&lt;&lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1549:2047" ph="&lt;&lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1595:2004" ph="&lt;&lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="1641:1961" ph="&lt;&lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2089:2683" ph="&lt;&lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2117:2658" ph="&lt;&lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2163:2615" ph="&lt;&lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2209:2572" ph="&lt;&lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt; &lt;Span Text=&quot;.&quot; /&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2700:3333" ph="&lt;&lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2728:3308" ph="&lt;&lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2774:3265" ph="&lt;&lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;.../&gt;" />
+                <marker date="1542308617980" expanded="true" signature="2820:3222" ph="&lt;&lt;Span Text=&quot;It shares code with its&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;versions.&quot; /&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/AboutViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/Views/NewItemPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/Views/AboutPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/App.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/Views/AboutPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/Services/AzureDataStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/BaseViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1606" />
+    <option name="y" value="52" />
+    <option name="width" value="1498" />
+    <option name="height" value="943" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="AboutPage.xaml" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="NewItemPage.xaml" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="App.xaml" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="iOSSpecialFeatures" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="iOSSpecialFeatures.MobileAppService" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOS Default" type="XamarinIOSProject" factoryName="Xamarin.iOS">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEFAULT_IPHONE_DEVICE" value="" />
+      <option name="DEFAULT_IPHONE_SIMULATOR" value="" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+      <item itemvalue="Xamarin.iOS.iOS Default" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="159d302f-a7a7-48d5-bb7f-5eaeb2a412ab" name="Default Changelist" comment="" />
+      <created>1542309181226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542309181226</updated>
+      <workItem from="1542309182777" duration="434000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="434000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1606" y="52" width="1498" height="943" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="REST Client" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/App.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <marker date="1542308617979" expanded="true" signature="39:645" ph="&lt;&lt;Application.Resources&gt;&#10;        &lt;ResourceDictionary&gt;&#10;            &lt;!--Global Styles--&gt;&#10;            &lt;Color x:Key=&quot;NavigationPrimary&quot;&gt;##2196F3&lt;/Color&gt;&#10;            &lt;Style TargetType=&quot;NavigationPage&quot;&gt;&#10;                &lt;Setter Property=&quot;BarBackgroundColor&quot; Value=&quot;{StaticResource NavigationPrimary}&quot; /&gt;&#10;                &lt;Setter Property=&quot;BarTextColor&quot; Value=&quot;White&quot; /&gt;&#10;            &lt;/Style&gt;&#10;        &lt;/ResourceDictionary&gt;&#10;    &lt;/Application.Resources&gt;.../&gt;" />
+            <marker date="1542308617979" expanded="true" signature="191:630" ph="&lt;&lt;ResourceDictionary&gt;&#10;            &lt;!--Global Styles--&gt;&#10;            &lt;Color x:Key=&quot;NavigationPrimary&quot;&gt;##2196F3&lt;/Color&gt;&#10;            &lt;Style TargetType=&quot;NavigationPage&quot;&gt;&#10;                &lt;Setter Property=&quot;BarBackgroundColor&quot; Value=&quot;{StaticResource NavigationPrimary}&quot; /&gt;&#10;                &lt;Setter Property=&quot;BarTextColor&quot; Value=&quot;White&quot; /&gt;&#10;            &lt;/Style&gt;&#10;        &lt;/ResourceDictionary&gt;.../&gt;" />
+            <marker date="1542308617979" expanded="true" signature="223:601" ph="&lt;&lt;Color x:Key=&quot;NavigationPrimary&quot;&gt;##2196F3&lt;/Color&gt; &lt;Style TargetType=&quot;NavigationPage&quot;&gt;&#10;                &lt;Setter Property=&quot;BarBackgroundColor&quot; Value=&quot;{StaticResource NavigationPrimary}&quot; /&gt;&#10;                &lt;Setter Property=&quot;BarTextColor&quot; Value=&quot;White&quot; /&gt;&#10;            &lt;/Style&gt;.../&gt;" />
+            <marker date="1542308617979" expanded="true" signature="350:571" ph="&lt;&lt;Setter Property=&quot;BarBackgroundColor&quot; Value=&quot;{StaticResource NavigationPrimary}&quot; /&gt; &lt;Setter Property=&quot;BarTextColor&quot; Value=&quot;White&quot; /&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/Views/AboutPage.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1542308617968" expanded="false" signature="6:61" ph="..." />
+            <marker date="1542308617968" expanded="true" signature="97:298" ph="{...}" />
+            <marker date="1542308617968" expanded="true" signature="202:296" ph="{...}" />
+            <marker date="1542308617968" expanded="true" signature="235:290" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/AboutViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1542308617952" expanded="false" signature="6:63" ph="..." />
+            <marker date="1542308617952" expanded="true" signature="104:404" ph="{...}" />
+            <marker date="1542308617952" expanded="true" signature="154:402" ph="{...}" />
+            <marker date="1542308617952" expanded="true" signature="192:347" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/ViewModels/BaseViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1542308617961" expanded="false" signature="6:206" ph="..." />
+            <marker date="1542308617961" expanded="true" signature="247:1597" ph="{...}" />
+            <marker date="1542308617961" expanded="true" signature="305:1595" ph="{...}" />
+            <marker date="1542308617961" expanded="true" signature="479:586" ph="{...}" />
+            <marker date="1542308617961" expanded="true" signature="652:757" ph="{...}" />
+            <marker date="1542308617961" expanded="true" signature="918:1179" ph="{...}" />
+            <marker date="1542308617961" expanded="true" signature="1189:1589" ph="INotifyPropertyChanged" />
+            <marker date="1542308617961" expanded="true" signature="1371:1570" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/App.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1542308617924" expanded="false" signature="6:127" ph="..." />
+            <marker date="1542308617924" expanded="true" signature="217:1098" ph="{...}" />
+            <marker date="1542308617924" expanded="true" signature="262:1096" ph="{...}" />
+            <marker date="1542308617924" expanded="true" signature="500:770" ph="{...}" />
+            <marker date="1542308617924" expanded="true" signature="813:876" ph="{...}" />
+            <marker date="1542308617924" expanded="true" signature="919:982" ph="{...}" />
+            <marker date="1542308617924" expanded="true" signature="1026:1090" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/Views/NewItemPage.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1542308617977" expanded="false" signature="6:129" ph="..." />
+            <marker date="1542308617977" expanded="true" signature="165:785" ph="{...}" />
+            <marker date="1542308617977" expanded="true" signature="272:783" ph="{...}" />
+            <marker date="1542308617977" expanded="true" signature="347:593" ph="{...}" />
+            <marker date="1542308617977" expanded="true" signature="434:546" ph="{...}" />
+            <marker date="1542308617977" expanded="true" signature="654:777" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/Services/AzureDataStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <marker date="1542308617939" expanded="false" signature="6:175" ph="..." />
+            <marker date="1542308617939" expanded="true" signature="214:2389" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="267:2387" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="366:533" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="620:896" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="660:859" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="953:1217" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="991:1181" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="1274:1608" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="1668:2107" ph="{...}" />
+            <marker date="1542308617939" expanded="true" signature="2167:2381" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iOSSpecialFeatures/Views/AboutPage.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1542308617980" expanded="true" signature="39:3568" ph="&lt;&lt;ContentPage.BindingContext&gt;&#10;        &lt;vm:AboutViewModel /&gt;&#10;    &lt;/ContentPage.BindingContext&gt; &lt;ContentPage.Resources&gt;&#10;        &lt;ResourceDictionary&gt;&#10;            &lt;!--Page Level Resources: Compatibile with Xamarin Live Player --&gt;&#10;            &lt;Color x:Key=&quot;Primary&quot;&gt;##2196F3&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;Accent&quot;&gt;##96d1ff&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;LightTextColor&quot;&gt;##999999&lt;/Color&gt;&#10;        &lt;/ResourceDictionary&gt;&#10;    &lt;/ContentPage.Resources&gt; &lt;Grid&gt;&#10;        &lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;        &lt;/Grid.RowDefinitions&gt;&#10;        &lt;StackLayout BackgroundColor=&quot;{StaticResource Accent}&quot; VerticalOptions=&quot;FillAndExpand&quot; HorizontalOptions=&quot;Fill&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Horizontal&quot; HorizontalOptions=&quot;Center&quot; VerticalOptions=&quot;Center&quot;&gt;&#10;                &lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/StackLayout&gt;&#10;        &lt;ScrollView Grid.Row=&quot;1&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; Padding=&quot;16,40,16,40&quot; Spacing=&quot;10&quot;&gt;&#10;                &lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/ScrollView&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="282:374" ph="&lt;&lt;vm:AboutViewModel /&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="379:728" ph="&lt;&lt;ResourceDictionary&gt;&#10;            &lt;!--Page Level Resources: Compatibile with Xamarin Live Player --&gt;&#10;            &lt;Color x:Key=&quot;Primary&quot;&gt;##2196F3&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;Accent&quot;&gt;##96d1ff&lt;/Color&gt;&#10;            &lt;Color x:Key=&quot;LightTextColor&quot;&gt;##999999&lt;/Color&gt;&#10;        &lt;/ResourceDictionary&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="411:699" ph="&lt;&lt;Color x:Key=&quot;Primary&quot;&gt;##2196F3&lt;/Color&gt; &lt;Color x:Key=&quot;Accent&quot;&gt;##96d1ff&lt;/Color&gt; &lt;Color x:Key=&quot;LightTextColor&quot;&gt;##999999&lt;/Color&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="733:3553" ph="&lt;&lt;Grid.RowDefinitions&gt;&#10;            &lt;RowDefinition Height=&quot;Auto&quot; /&gt;&#10;            &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;        &lt;/Grid.RowDefinitions&gt; &lt;StackLayout BackgroundColor=&quot;{StaticResource Accent}&quot; VerticalOptions=&quot;FillAndExpand&quot; HorizontalOptions=&quot;Fill&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Horizontal&quot; HorizontalOptions=&quot;Center&quot; VerticalOptions=&quot;Center&quot;&gt;&#10;                &lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/StackLayout&gt; &lt;ScrollView Grid.Row=&quot;1&quot;&gt;&#10;            &lt;StackLayout Orientation=&quot;Vertical&quot; Padding=&quot;16,40,16,40&quot; Spacing=&quot;10&quot;&gt;&#10;                &lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;&#10;            &lt;/StackLayout&gt;&#10;        &lt;/ScrollView&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="748:885" ph="&lt;&lt;RowDefinition Height=&quot;Auto&quot; /&gt; &lt;RowDefinition Height=&quot;*&quot; /&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="894:1372" ph="&lt;&lt;StackLayout Orientation=&quot;Horizontal&quot; HorizontalOptions=&quot;Center&quot; VerticalOptions=&quot;Center&quot;&gt;&#10;                &lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;&#10;            &lt;/StackLayout&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1019:1349" ph="&lt;&lt;ContentView Padding=&quot;0,40,0,40&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;&#10;                &lt;/ContentView&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1126:1322" ph="&lt;&lt;Image Source=&quot;xamarin_logo.png&quot; VerticalOptions=&quot;Center&quot; HeightRequest=&quot;64&quot; /&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1381:3541" ph="&lt;&lt;StackLayout Orientation=&quot;Vertical&quot; Padding=&quot;16,40,16,40&quot; Spacing=&quot;10&quot;&gt;&#10;                &lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt;&#10;                &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;&#10;            &lt;/StackLayout&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1419:3519" ph="&lt;&lt;Label FontSize=&quot;22&quot;&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt; &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt; &lt;Label&gt;&#10;                    &lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;&#10;                &lt;/Label&gt; &lt;Button Margin=&quot;0,10,0,0&quot; Text=&quot;Learn more&quot; Command=&quot;{Binding OpenWebCommand}&quot; BackgroundColor=&quot;{StaticResource Primary}&quot; TextColor=&quot;White&quot; /&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1507:2072" ph="&lt;&lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1549:2047" ph="&lt;&lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1595:2004" ph="&lt;&lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="1641:1961" ph="&lt;&lt;Span Text=&quot;AppName&quot; FontAttributes=&quot;Bold&quot; FontSize=&quot;22&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;1.0&quot; ForegroundColor=&quot;{StaticResource LightTextColor}&quot; /&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2089:2683" ph="&lt;&lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2117:2658" ph="&lt;&lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2163:2615" ph="&lt;&lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot;.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2209:2572" ph="&lt;&lt;Span Text=&quot;This app is written in C## and native APIs using the&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;Xamarin Platform&quot; FontAttributes=&quot;Bold&quot; /&gt; &lt;Span Text=&quot;.&quot; /&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2700:3333" ph="&lt;&lt;Label.FormattedText&gt;&#10;                        &lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;&#10;                    &lt;/Label.FormattedText&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2728:3308" ph="&lt;&lt;FormattedString&gt;&#10;                            &lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;&#10;                        &lt;/FormattedString&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2774:3265" ph="&lt;&lt;FormattedString.Spans&gt;&#10;                                &lt;Span Text=&quot;It shares code with its&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt;&#10;                                &lt;Span Text=&quot; &quot; /&gt;&#10;                                &lt;Span Text=&quot;versions.&quot; /&gt;&#10;                            &lt;/FormattedString.Spans&gt;.../&gt;" />
+            <marker date="1542308617980" expanded="true" signature="2820:3222" ph="&lt;&lt;Span Text=&quot;It shares code with its&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;iOS, Android, and Windows&quot; FontAttributes=&quot;Bold&quot; /&gt; &lt;Span Text=&quot; &quot; /&gt; &lt;Span Text=&quot;versions.&quot; /&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
