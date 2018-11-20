@@ -12,6 +12,12 @@ using iOSSpecialFeatures.Shared.Models;
 
 namespace iOSSpecialFeatures.ViewModels
 {
+    public class ContactsViewModel
+    {
+
+    }
+
+
     public class ItemsViewModel : BaseViewModel
     {
         public ObservableCollection<Contact> Items { get; set; }

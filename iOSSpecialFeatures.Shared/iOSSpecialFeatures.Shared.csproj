@@ -7,6 +7,7 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Realms\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
@@ -14,5 +15,6 @@
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Realm" Version="3.3.0" />
   </ItemGroup>
 </Project>
