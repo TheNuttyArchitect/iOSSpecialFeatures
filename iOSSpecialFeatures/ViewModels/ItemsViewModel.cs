@@ -5,38 +5,34 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-using iOSSpecialFeatures.Models;
 using iOSSpecialFeatures.Views;
 using iOSSpecialFeatures.Shared.Repositories;
-using iOSSpecialFeatures.Shared.Models;
 using iOSSpecialFeatures.Repositories;
 using System.Linq;
+using iOSSpecialFeatures.Shared.Realms;
 
 namespace iOSSpecialFeatures.ViewModels
 {
-    public class ContactsViewModel
-    {
-
-    }
 
 
     public class ItemsViewModel : BaseViewModel
     {
         public ObservableCollection<Contact> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
-        private IContactRepository contactRepository;
+        private RealmSyncExampleRepo _realmRepo;
 
         public ItemsViewModel()
         {
+            _realmRepo = new RealmSyncExampleRepo();
+
             Title = "Browse";
             Items = new ObservableCollection<Contact>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            contactRepository = DependencyService.Get<IContactRepository>();
 
             MessagingCenter.Subscribe<NewItemPage, Contact>(this, "AddItem", async (obj, item) =>
             {
                 var newItem = item as Contact;
-                await contactRepository.AddContact(newItem);
+                //await contactRepository.AddContact(newItem);
                 Items.Add(newItem);
                 //await DataStore.AddItemAsync(newItem);
             });
@@ -51,13 +47,9 @@ namespace iOSSpecialFeatures.ViewModels
 
             try
             {
-                var repo = new RealmSyncExampleRepo();
-                await repo.Initialize();
+
                 //repo.CreateContact();
-                var conts = repo.GetActiveContacts();
-
-                var contacts = await contactRepository.GetAllContacts();
-
+                var contacts = await _realmRepo.GetActiveContacts();
 
                 Items.Clear();
                 //var items = await DataStore.GetItemsAsync(true);

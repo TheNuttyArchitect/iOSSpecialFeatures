@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 using iOSSpecialFeatures.Models;
 using iOSSpecialFeatures.Views;
 using iOSSpecialFeatures.ViewModels;
+using iOSSpecialFeatures.Shared.Realms;
 
 namespace iOSSpecialFeatures.Views
 {
@@ -27,7 +28,7 @@ namespace iOSSpecialFeatures.Views
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as Item;
+            var item = args.SelectedItem as Contact;
             if (item == null)
                 return;
 
