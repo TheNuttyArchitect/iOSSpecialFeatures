@@ -9,6 +9,8 @@ using iOSSpecialFeatures.Models;
 using iOSSpecialFeatures.Views;
 using iOSSpecialFeatures.Shared.Repositories;
 using iOSSpecialFeatures.Shared.Models;
+using iOSSpecialFeatures.Repositories;
+using System.Linq;
 
 namespace iOSSpecialFeatures.ViewModels
 {
@@ -49,6 +51,11 @@ namespace iOSSpecialFeatures.ViewModels
 
             try
             {
+                var repo = new RealmSyncExampleRepo();
+                await repo.Initialize();
+                //repo.CreateContact();
+                var conts = repo.GetActiveContacts();
+
                 var contacts = await contactRepository.GetAllContacts();
 
 

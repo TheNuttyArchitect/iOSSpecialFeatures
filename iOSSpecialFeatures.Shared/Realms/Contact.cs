@@ -39,10 +39,10 @@ namespace iOSSpecialFeatures.Shared.Realms
         [MapTo("phoneNumbers")]
         public IList<PhoneNumber> PhoneNumbers { get; }
 
-        [Required, MapTo("isActive"), Indexed]
+        [MapTo("isActive"), Indexed]
         public bool IsActive { get; set; } = true;
 
-        [Required, MapTo("audit")]
+        [MapTo("audit")]
         public AuditData Audit { get; set; } = new AuditData();
     }
 }

@@ -8,7 +8,7 @@ namespace iOSSpecialFeatures.Shared.Realms
         [Required, MapTo("createdBy")]
         public string CreatedBy { get; set; }
 
-        [Required, MapTo("createdDate")]
+        [MapTo("createdDate")]
         public DateTimeOffset CreatedDate { get; set; } = DateTimeOffset.Now;
 
         [MapTo("lastModifiedBy")]

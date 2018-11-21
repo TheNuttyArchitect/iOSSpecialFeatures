@@ -20,10 +20,10 @@ namespace iOSSpecialFeatures.Shared.Realms
         [MapTo("country")]
         public string Country { get; set; }
 
-        [Required, MapTo("isActive"), Indexed]
+        [MapTo("isActive"), Indexed]
         public bool IsActive { get; set; } = true;
 
-        [Required, MapTo("audit")]
+        [MapTo("audit")]
         public AuditData Audit { get; set; } = new AuditData();
     }
 }

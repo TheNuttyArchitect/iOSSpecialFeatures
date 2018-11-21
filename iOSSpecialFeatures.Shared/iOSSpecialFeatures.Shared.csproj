@@ -8,6 +8,7 @@
     <Folder Include="Model\" />
     <Folder Include="Repositories\" />
     <Folder Include="Realms\" />
+    <Folder Include="*Undefined*Tools\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
