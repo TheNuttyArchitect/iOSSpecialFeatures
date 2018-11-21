@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 using iOSSpecialFeatures.Views;
-using iOSSpecialFeatures.Shared.Repositories;
 using iOSSpecialFeatures.Repositories;
-using System.Linq;
 using iOSSpecialFeatures.Shared.Realms;
 
 namespace iOSSpecialFeatures.ViewModels

@@ -5,17 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Realms\" />
     <Folder Include="*Undefined*Tools\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
+    <Compile Remove="Model\AuditBase.cs" />
+    <Compile Remove="Model\ChangeDataHash.cs" />
+    <Compile Remove="Model\Contact.cs" />
+    <Compile Remove="Model\ContactEmail.cs" />
+    <Compile Remove="Model\ContactPhone.cs" />
+    <Compile Remove="IDataContext.cs" />
+    <Compile Remove="Repositories\IContactRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
     <PackageReference Include="Realm" Version="3.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="FodyWeavers.xml" />
   </ItemGroup>
 </Project>

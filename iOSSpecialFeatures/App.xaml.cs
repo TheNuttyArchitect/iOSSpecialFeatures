@@ -1,10 +1,7 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using iOSSpecialFeatures.Services;
 using iOSSpecialFeatures.Views;
-using iOSSpecialFeatures.Shared.Repositories;
-using iOSSpecialFeatures.Repositories;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace iOSSpecialFeatures
@@ -18,8 +15,6 @@ namespace iOSSpecialFeatures
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<IContactRepository, ContactRepository>();
 
             if (UseMockDataStore)
                 DependencyService.Register<MockDataStore>();
