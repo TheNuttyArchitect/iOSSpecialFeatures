@@ -2,6 +2,9 @@
 using Xamarin.Forms.Xaml;
 using iOSSpecialFeatures.Services;
 using iOSSpecialFeatures.Views;
+using iOSSpecialFeatures.Repositories;
+using FreshMvvm;
+using iOSSpecialFeatures.PageModels;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace iOSSpecialFeatures
@@ -9,19 +12,19 @@ namespace iOSSpecialFeatures
     public partial class App : Application
     {
         //TODO: Replace with *.azurewebsites.net url after deploying backend to Azure
-        public static string BackendUrl = "http://localhost:5000";
-        public static bool UseMockDataStore = true;
+        //public static string BackendUrl = "http://localhost:5000";
+        //public static bool UseMockDataStore = true;
 
         public App()
         {
             InitializeComponent();
 
-            if (UseMockDataStore)
-                DependencyService.Register<MockDataStore>();
-            else
-                DependencyService.Register<AzureDataStore>();
+            //DependencyService.Register<ContactRepository>();
+            FreshIOC.Container.Register<ContactRepository, ContactRepository>();
+            var page = FreshPageModelResolver.ResolvePageModel<ContactsPageModel>();
+            MainPage = new FreshNavigationContainer(page);
 
-            MainPage = new MainPage();
+
         }
 
         protected override void OnStart()

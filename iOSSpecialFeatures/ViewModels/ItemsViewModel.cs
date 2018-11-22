@@ -17,53 +17,53 @@ namespace iOSSpecialFeatures.ViewModels
     {
         public ObservableCollection<Contact> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
-        private RealmSyncExampleRepo _realmRepo;
+        private ContactRepository _realmRepo;
 
         public ItemsViewModel()
         {
-            _realmRepo = new RealmSyncExampleRepo();
+            //_realmRepo = new ContactRepository();
 
-            Title = "Browse";
-            Items = new ObservableCollection<Contact>();
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            //Title = "Browse";
+            //Items = new ObservableCollection<Contact>();
+            //LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            MessagingCenter.Subscribe<NewItemPage, Contact>(this, "AddItem", async (obj, item) =>
-            {
-                var newItem = item as Contact;
-                //await contactRepository.AddContact(newItem);
-                Items.Add(newItem);
-                //await DataStore.AddItemAsync(newItem);
-            });
+            //MessagingCenter.Subscribe<NewItemPage, Contact>(this, "AddItem", async (obj, item) =>
+            //{
+            //    var newItem = item as Contact;
+            //    //await contactRepository.AddContact(newItem);
+            //    Items.Add(newItem);
+            //    //await DataStore.AddItemAsync(newItem);
+            //});
         }
 
         async Task ExecuteLoadItemsCommand()
         {
-            if (IsBusy)
-                return;
+            //if (IsBusy)
+            //    return;
 
-            IsBusy = true;
+            //IsBusy = true;
 
-            try
-            {
+            //try
+            //{
 
-                //repo.CreateContact();
-                var contacts = await _realmRepo.GetActiveContacts();
+            //    //repo.CreateContact();
+            //    var contacts = await _realmRepo.GetActiveContacts();
 
-                Items.Clear();
-                //var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in contacts)
-                {
-                    Items.Add(item);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+            //    Items.Clear();
+            //    //var items = await DataStore.GetItemsAsync(true);
+            //    foreach (var item in contacts)
+            //    {
+            //        Items.Add(item);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Debug.WriteLine(ex);
+            //}
+            //finally
+            //{
+            //    IsBusy = false;
+            //}
         }
     }
 }

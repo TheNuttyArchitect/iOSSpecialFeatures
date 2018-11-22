@@ -8,15 +8,32 @@ using Realms.Sync;
 
 namespace iOSSpecialFeatures.Repositories
 {
-    public class RealmSyncExampleRepo
+    public class ContactRepository
     {
         private const string AuthServerURL = "https://devtownbenplayground.us1a.cloud.realm.io";
         private const string ServerURL = "realms://devtownbenplayground.us1a.cloud.realm.io/~/playground";
         private Realm _realm;
 
-        public async Task Initialize()
+        public ContactRepository()
         {
-            var user = await User.LoginAsync(Credentials.UsernamePassword("bchesnut@developertown.com", "welcome@1", false), new Uri(AuthServerURL));
+            var loginTask = Task.Run<User>
+            (
+                async () => 
+                    await User.LoginAsync
+                    (
+                        Credentials.UsernamePassword
+                        (
+                            "bchesnut@developertown.com", 
+                             "welcome@1", 
+                             false
+                        ), 
+                        new Uri(AuthServerURL)
+                    )
+            );
+
+            loginTask.Wait();
+            var user = loginTask.Result;
+
             var syncConfig = new FullSyncConfiguration(new Uri(ServerURL), user)
             {
                 ObjectClasses = new[]
@@ -31,45 +48,26 @@ namespace iOSSpecialFeatures.Repositories
             };
 
             _realm = Realm.GetInstance(syncConfig);
+
         }
 
-        public async Task<List<Contact>> GetActiveContacts()
+        public List<Contact> GetActiveContacts()
         {
-            if (_realm == null)
-            {
-                await Initialize();
-            }
-
-            return (await GetContactQuery()).Where(c => c.IsActive).ToList();
+            return GetContactQuery().Where(c => c.IsActive).ToList();
         }
 
-        public async Task<IQueryable<Contact>> GetContactQuery()
+        public IQueryable<Contact> GetContactQuery()
         {
-            if (_realm == null)
-            {
-                await Initialize();
-            }
-
             return _realm.All<Contact>();
         }
 
-        public async Task AddContact(Contact contact)
+        public void AddContact(Contact contact)
         {
-            if(_realm == null)
-            {
-                await Initialize();
-            }
-
             _realm.Write(() => _realm.Add(contact));
         }
 
-        public async Task UpdateContact(Contact contact)
+        public void UpdateContact(Contact contact)
         {
-            if (_realm == null)
-            {
-                await Initialize();
-            }
-
             _realm.Write(() => _realm.Add(contact, update: true));
         }
 
