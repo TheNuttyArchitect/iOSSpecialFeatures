@@ -8,7 +8,7 @@ using Realms.Sync;
 
 namespace iOSSpecialFeatures.Repositories
 {
-    public class ContactRepository
+    public class ContactRepository : IContactRepository
     {
         private const string AuthServerURL = "https://devtownbenplayground.us1a.cloud.realm.io";
         private const string ServerURL = "realms://devtownbenplayground.us1a.cloud.realm.io/~/playground";
@@ -16,64 +16,88 @@ namespace iOSSpecialFeatures.Repositories
 
         public ContactRepository()
         {
-            var loginTask = Task.Run<User>
-            (
-                async () => 
-                    await User.LoginAsync
-                    (
-                        Credentials.UsernamePassword
-                        (
-                            "bchesnut@developertown.com", 
-                             "welcome@1", 
-                             false
-                        ), 
-                        new Uri(AuthServerURL)
-                    )
-            );
 
-            loginTask.Wait();
-            var user = loginTask.Result;
 
-            var syncConfig = new FullSyncConfiguration(new Uri(ServerURL), user)
+        }
+
+        private void EnsureRealmIsInitialized()
+        {
+            if (_realm == null)
             {
-                ObjectClasses = new[]
+                try
                 {
-                    typeof(AuditData),
-                    typeof(BirthInfo),
-                    typeof(EmailAddress),
-                    typeof(PhoneNumber),
-                    typeof(StreetAddress),
-                    typeof(Contact)
+                    var loginTask = Task.Run<User>
+                    (
+                        async () =>
+                            await User.LoginAsync
+                            (
+                                Credentials.UsernamePassword
+                                (
+                                    "bchesnut@developertown.com",
+                                     "welcome@1",
+                                     false
+                                ),
+                                new Uri(AuthServerURL)
+                            )
+                    );
+
+                    loginTask.Wait();
+                    var user = loginTask.Result;
+
+                    var syncConfig = new FullSyncConfiguration(new Uri(ServerURL), user)
+                    {
+                        ObjectClasses = new[]
+                        {
+                            typeof(AuditData),
+                            typeof(BirthInfo),
+                            typeof(EmailAddress),
+                            typeof(PhoneNumber),
+                            typeof(StreetAddress),
+                            typeof(Contact)
+                        }
+                    };
+
+                    _realm = Realm.GetInstance(syncConfig);
                 }
-            };
-
-            _realm = Realm.GetInstance(syncConfig);
-
+                catch(Exception ex)
+                {
+                    // FYI this is here just so that the XAML Designer doesn't freak out
+                    Console.WriteLine(ex);
+                }
+            }
         }
 
         public List<Contact> GetActiveContacts()
         {
-            return GetContactQuery().Where(c => c.IsActive).ToList();
+            return GetContactQuery().Where(c => c.IsActive)?.ToList();
         }
 
         public IQueryable<Contact> GetContactQuery()
         {
-            return _realm.All<Contact>();
+            EnsureRealmIsInitialized();
+            if (_realm != null)
+            {
+                return _realm.All<Contact>();
+            }
+            return new List<Contact>().AsQueryable();
         }
 
         public void AddContact(Contact contact)
         {
+            EnsureRealmIsInitialized();
             _realm.Write(() => _realm.Add(contact));
         }
 
         public void UpdateContact(Contact contact)
         {
+            EnsureRealmIsInitialized();
             _realm.Write(() => _realm.Add(contact, update: true));
         }
 
 
         public void CreateContact()
         {
+            EnsureRealmIsInitialized();
             var contact = new Contact
             {
                 FirstName = "Kylan",

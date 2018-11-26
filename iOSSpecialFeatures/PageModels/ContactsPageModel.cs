@@ -10,10 +10,10 @@ namespace iOSSpecialFeatures.PageModels
     [PropertyChanged.AddINotifyPropertyChangedInterface]
     public class ContactsPageModel : FreshBasePageModel
     {
-        private readonly ContactRepository _contactRepository;
+        private readonly IContactRepository _contactRepository;
         private Contact _selectedItem { get; set; }
 
-        public ContactsPageModel(ContactRepository contactRepository)
+        public ContactsPageModel(IContactRepository contactRepository)
         {
             _contactRepository = contactRepository;
         }

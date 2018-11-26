@@ -28,5 +28,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Repositories\IRealmSyncExampleRepo.cs" />
+    <Compile Remove="LaunchPage.cs" />
   </ItemGroup>
 </Project>

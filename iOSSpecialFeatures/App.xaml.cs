@@ -20,7 +20,7 @@ namespace iOSSpecialFeatures
             InitializeComponent();
 
             //DependencyService.Register<ContactRepository>();
-            FreshIOC.Container.Register<ContactRepository, ContactRepository>();
+            FreshIOC.Container.Register<IContactRepository, ContactRepository>();
             var page = FreshPageModelResolver.ResolvePageModel<ContactsPageModel>();
             MainPage = new FreshNavigationContainer(page);
 
