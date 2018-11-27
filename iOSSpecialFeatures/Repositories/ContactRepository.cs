@@ -91,9 +91,18 @@ namespace iOSSpecialFeatures.Repositories
         public void UpdateContact(Contact contact)
         {
             EnsureRealmIsInitialized();
-            _realm.Write(() => _realm.Add(contact, update: true));
+            var transaction = _realm.BeginWrite();
+            try
+            {
+                _realm.Add(contact, update: true);
+                transaction.Commit();
+            }
+            catch(Exception)
+            {
+                transaction.Rollback();
+                throw;
+            }
         }
-
 
         public void CreateContact()
         {

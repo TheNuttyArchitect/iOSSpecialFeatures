@@ -25,9 +25,16 @@
     <Folder Include="Repositories\" />
     <Folder Include="PageModels\" />
     <Folder Include="Pages\" />
+    <Folder Include="Resources\">
+      <DependentUpon>Resources</DependentUpon>
+    </Folder>
+    <Folder Include="Pages\Controls\">
+      <DependentUpon>Controls</DependentUpon>
+    </Folder>
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Repositories\IRealmSyncExampleRepo.cs" />
     <Compile Remove="LaunchPage.cs" />
+    <Compile Remove="Models\BirthInfo.cs" />
   </ItemGroup>
 </Project>

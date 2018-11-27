@@ -1,9 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
 using Realms;
 
 namespace iOSSpecialFeatures.Shared.Realms
 {
-    public class BirthInfo : RealmObject
+    public class BirthInfo : RealmObject, INotifyPropertyChanged
     {
         [PrimaryKey, MapTo("id")]
         public string ID { get; set; } = Guid.NewGuid().ToString();

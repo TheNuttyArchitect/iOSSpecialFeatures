@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="iOSSpecialFeatures.Pages.Controls.FormField">
+    <ContentView.Content>
+        <StackLayout Margin="5,5,5,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="95*"/>
+                    <ColumnDefinition Width="05*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="label" Style="{StaticResource formLabel}" Grid.Column="0" Grid.Row="0" />
+                <Label x:Name="isRequired" Text="*" Style="{StaticResource formLabel}" Grid.Column="1" Grid.Row="0" />
+            </Grid>
+            <Entry x:Name="value" Style="{StaticResource formInput}"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

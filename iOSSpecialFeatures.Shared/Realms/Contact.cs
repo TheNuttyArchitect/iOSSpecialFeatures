@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Realms;
 
 namespace iOSSpecialFeatures.Shared.Realms
 {
-    public class Contact : RealmObject
+    public class Contact : RealmObject, INotifyPropertyChanged
     {
         [PrimaryKey, MapTo("id")]
         public string ID { get; set; } = Guid.NewGuid().ToString();

@@ -42,13 +42,21 @@ namespace iOSSpecialFeatures.PageModels
             set
             {
                 _selectedItem = value;
-                // TODO: Wire in ItemSelected Command
+                if(value != null)
+                {
+                    ContactSelectedCommand.Execute(value);
+                }
             }
         }
 
-        public Command AddItem
-        {
-            get => new Command(() => CoreMethods.DisplayAlert("Test", "Hello World", "Close"));
-        } 
+        public Command AddItemCommand => new Command
+        (
+            async () => await CoreMethods.PushPageModel<ContactPageModel>(null)
+        );
+
+        public Command<Contact> ContactSelectedCommand => new Command<Contact>
+        (
+            async (contact) => await CoreMethods.PushPageModel<ContactPageModel>(contact)
+        );
     }
 }

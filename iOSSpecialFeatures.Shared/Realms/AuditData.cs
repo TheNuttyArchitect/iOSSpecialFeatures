@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using Realms;
 
 namespace iOSSpecialFeatures.Shared.Realms
 {
-    public class AuditData : RealmObject
+
+    public class AuditData : RealmObject, INotifyPropertyChanged
     {
         [Required, MapTo("createdBy")]
         public string CreatedBy { get; set; }
